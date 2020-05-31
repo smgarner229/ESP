@@ -1,1 +1,4 @@
+# Ignore the build directory, so all
+# the garbage that comes along with
+# doesn't come to the github
 /build/

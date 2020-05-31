@@ -12,9 +12,8 @@ struct atom{
     double x,y,z;
 };
 
-template <T>
 
-struct 3_vector{
+struct _3_vector{
     double x,y,z; 
 };
 

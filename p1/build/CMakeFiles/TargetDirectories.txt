@@ -1,3 +1,0 @@
-/home/smgarner/esp/p1/build/CMakeFiles/rebuild_cache.dir
-/home/smgarner/esp/p1/build/CMakeFiles/edit_cache.dir
-/home/smgarner/esp/p1/build/CMakeFiles/CMAKE_RUN.dir

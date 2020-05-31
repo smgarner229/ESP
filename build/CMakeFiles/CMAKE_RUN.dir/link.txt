@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/CMAKE_RUN.dir/p1/main.cpp.o CMakeFiles/CMAKE_RUN.dir/p1/input_parser.cpp.o CMakeFiles/CMAKE_RUN.dir/p1/molecule.cpp.o CMakeFiles/CMAKE_RUN.dir/p1/wfn.cpp.o  -o CMAKE_RUN 

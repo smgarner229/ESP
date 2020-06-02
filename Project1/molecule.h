@@ -14,6 +14,7 @@ class molecule
 public:
   molecule();
   void add_atom(const atom * temp_atom);
+  void print_geomery();
   ~molecule();
 };
 

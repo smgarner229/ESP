@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "atom.h"
 
 namespace esp
@@ -8,5 +9,10 @@ namespace esp
     _x=x;
     _y=y;
     _z=z;
+  }
+
+  void atom::print_position()
+  {
+    printf("%2.4f\t%12.8f\t%12.8f\t%12.8f\n",_charge,_x,_y,_z);
   }
 }

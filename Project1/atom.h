@@ -11,6 +11,7 @@ class atom {
     double _z;
   public:
     atom(const double,const double,const double,const double);
+    void print_position();
 };
 
 }

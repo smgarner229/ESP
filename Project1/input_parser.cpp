@@ -36,15 +36,15 @@ void read_input(const char ** filename, molecule * temp_molecule)
     double * read_geom = new double[4];
     //molecule read_molecule;
     atom * temp_atom;
-    int counter=natoms;
+    int counter=0;
     while(true)
     {
+        if(myfile.eof()||counter==natoms)
+          break;
         myfile>>read_geom[0]>>read_geom[1]>>read_geom[2]>>read_geom[3];
         temp_atom = new atom(read_geom[0],read_geom[1],read_geom[2],read_geom[3]);
         temp_molecule->add_atom(temp_atom);
         counter++;
-        if(myfile.eof()||counter==natoms)
-          break;
     }
     delete [] read_geom;
     delete temp_atom;

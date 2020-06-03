@@ -20,7 +20,7 @@ namespace esp
 
   void molecule::print_geomery()
   {
-    std::cout << "Molecular geometry: " << std::endl;
+    printf("\nMolecular geometry:\n");
     for (int i=0; i<_geom.size(); ++i)
     {
       _geom[i].print_position();
@@ -39,6 +39,19 @@ namespace esp
       _bond_lengths.push_back(temp_bonds);
       temp_bonds.clear();
     }
+  }
+
+  void molecule::print_bond_lengths()
+  {
+    printf("\nIntra-atomic distances:\n");
+    for (int i=0; i<_bond_lengths.size(); ++i)
+    {
+      for (int j=0; j<_bond_lengths[i].size(); ++j)
+      {
+        printf("%4d\t%4d\t%6.8f\n",i,j+i+1,_bond_lengths[i][j]);
+      }
+    }
+    printf("\n");
   }
 
   molecule::~molecule()

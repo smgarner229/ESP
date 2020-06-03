@@ -16,7 +16,6 @@ namespace esp
 
   void atom::print_position()
   {
-    //printf("%2.4f\t%12.8f\t%12.8f\t%12.8f\n",_charge,_x,_y,_z);
     printf("%2.4f\t",_charge);
     _position.print_position();
   }

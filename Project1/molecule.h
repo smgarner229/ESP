@@ -17,6 +17,7 @@ public:
   void add_atom(const atom * temp_atom);
   void print_geomery();
   void calc_bonds_lengths();
+  void print_bond_lengths();
   ~molecule();
 };
 

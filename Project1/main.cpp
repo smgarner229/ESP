@@ -12,5 +12,6 @@ int main(const int argc,const char ** argv)
   master_molecule.print_geomery();
   master_molecule.calc_bonds_lengths();
   master_molecule.print_bond_lengths();
+  master_molecule.calc_bond_angles();
   return 0;
 }

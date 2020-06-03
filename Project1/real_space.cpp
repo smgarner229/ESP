@@ -43,10 +43,54 @@ namespace esp{
     return;
   }
 
+  vector_3d::vector_3d(point_3d i, point_3d j)
+  {
+    _ex=-(i.getx()-j.getx())/calc_distance(i,j);
+    _ey=-(i.gety()-j.gety())/calc_distance(i,j);
+    _ez=-(i.getz()-j.getz())/calc_distance(i,j);
+  }
+
+  double vector_3d::getex()
+  {
+    return _ex;
+  }
+
+  double vector_3d::getey()
+  {
+    return _ey;
+  }
+
+  double vector_3d::getez()
+  {
+    return _ez;
+  }
+
+  vector_3d::~vector_3d()
+  {
+    return;
+  }
+
   double calc_distance(point_3d i,point_3d j)
   {
     return std::pow((std::pow((i.getx()-j.getx()),2.0)
                     +std::pow((i.gety()-j.gety()),2.0)
                     +std::pow((i.getz()-j.getz()),2.0)),0.5);
   }
+
+  double dot_prodcut(vector_3d a,vector_3d b)
+  {
+    return a.getex()*b.getex()+a.getey()*b.getey()+a.getez()*b.getez();
+  }
+
+  double bond_angle(point_3d i, point_3d j, point_3d k)
+  {
+    vector_3d * ij;
+    vector_3d * jk;
+    ij = new vector_3d(i,j);
+    jk = new vector_3d(k,j);
+    return (180.0/std::acos(-1.0))*std::acos(dot_prodcut(*ij,*jk));
+    delete ij;
+    delete jk;
+  }
+
 }

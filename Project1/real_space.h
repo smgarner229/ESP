@@ -18,7 +18,23 @@ namespace esp{
     ~point_3d();
   };
 
+  class vector_3d
+  {
+    double _ex;
+    double _ey;
+    double _ez;
+  public:
+    vector_3d(point_3d,point_3d);
+    double getex();
+    double getey();
+    double getez();
+    ~vector_3d();
+  };
+
   double calc_distance(point_3d,point_3d);
+  double dot_prodcut(vector_3d,vector_3d);
+  //vector_3d cross_product(vector_3d,vector_3d);
+  double bond_angle(point_3d,point_3d,point_3d);
 
 }
 

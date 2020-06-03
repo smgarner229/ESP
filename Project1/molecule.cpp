@@ -54,6 +54,21 @@ namespace esp
     printf("\n");
   }
 
+  void molecule::calc_bond_angles()
+  {
+    double angle;
+    for (int i = 0; i<_geom.size(); ++i)
+    {
+      for (int j = i+1; j<_geom.size(); ++j)
+      {
+        for (int k = j+1; k<_geom.size(); ++k)
+        {
+          std::cout << bond_angle(_geom[i].get_position(),_geom[j].get_position(),_geom[k].get_position()) << std::endl;
+        }
+      }
+    }
+  }
+
   molecule::~molecule()
   {
     std::cout<<"Deleting memory and destroying the molecule"<<std::endl;

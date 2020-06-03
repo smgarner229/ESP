@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cmath>
 #include "real_space.h"
 
 namespace esp{
@@ -22,9 +23,30 @@ namespace esp{
     return;
   }
 
-  point_3d::~point_3d()
+  double point_3d::getx()
   {
-    return; 
+    return _x;
   }
 
+  double point_3d::gety()
+  {
+    return _y;
+  }
+
+  double point_3d::getz()
+  {
+    return _z;
+  }
+
+  point_3d::~point_3d()
+  {
+    return;
+  }
+
+  double calc_distance(point_3d i,point_3d j)
+  {
+    return std::pow((std::pow((i.getx()-j.getx()),2.0)
+                    +std::pow((i.gety()-j.gety()),2.0)
+                    +std::pow((i.getz()-j.getz()),2.0)),0.5);
+  }
 }

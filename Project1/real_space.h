@@ -12,8 +12,13 @@ namespace esp{
     point_3d();
     void set_position(double,double,double);
     void print_position();
+    double getx();
+    double gety();
+    double getz();
     ~point_3d();
   };
+
+  double calc_distance(point_3d,point_3d);
 
 }
 

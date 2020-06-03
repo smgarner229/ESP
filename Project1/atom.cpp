@@ -9,6 +9,11 @@ namespace esp
     _position.set_position(x,y,z);
   }
 
+  point_3d atom::get_position()
+  {
+    return _position;
+  }
+
   void atom::print_position()
   {
     //printf("%2.4f\t%12.8f\t%12.8f\t%12.8f\n",_charge,_x,_y,_z);

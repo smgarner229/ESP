@@ -13,6 +13,7 @@ class atom {
     point_3d _position;
   public:
     atom(const double,const double,const double,const double);
+    point_3d get_position();
     void print_position();
 };
 

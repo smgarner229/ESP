@@ -82,7 +82,7 @@ namespace esp{
     return a.getex()*b.getex()+a.getey()*b.getey()+a.getez()*b.getez();
   }
 
-  double bond_angle(point_3d i, point_3d j, point_3d k)
+  double angle_3points(point_3d i, point_3d j, point_3d k)
   {
     vector_3d * ij;
     vector_3d * jk;

@@ -63,7 +63,7 @@ namespace esp
       {
         for (int k = j+1; k<_geom.size(); ++k)
         {
-          std::cout << bond_angle(_geom[i].get_position(),_geom[j].get_position(),_geom[k].get_position()) << std::endl;
+          std::cout << angle_3points(_geom[i].get_position(),_geom[j].get_position(),_geom[k].get_position()) << std::endl;
         }
       }
     }

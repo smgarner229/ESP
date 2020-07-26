@@ -3,7 +3,7 @@
 
 namespace esp{
 
-  class point_3d
+class point_3d
   {
     double _x;
     double _y;
@@ -18,7 +18,7 @@ namespace esp{
     ~point_3d();
   };
 
-  class vector_3d
+class vector_3d
   {
     double _ex;
     double _ey;
@@ -34,7 +34,7 @@ namespace esp{
   double calc_distance(point_3d,point_3d);
   double dot_prodcut(vector_3d,vector_3d);
   //vector_3d cross_product(vector_3d,vector_3d);
-  double bond_angle(point_3d,point_3d,point_3d);
+  double angle_3points(point_3d,point_3d,point_3d);
 
 }
 

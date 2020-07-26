@@ -1,4 +1,0 @@
-/home/smgarner/esp/cpp_testing/build/CMakeFiles/rebuild_cache.dir
-/home/smgarner/esp/cpp_testing/build/CMakeFiles/TEST_LP.dir
-/home/smgarner/esp/cpp_testing/build/CMakeFiles/edit_cache.dir
-/home/smgarner/esp/cpp_testing/build/CMakeFiles/CMAKE_RUN.dir

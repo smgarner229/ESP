@@ -7,8 +7,10 @@ programming projects [github
 directory](https://github.com/CrawfordGroup/ProgrammingProjects).
 
 
-This project is going to be done in three languages: Python, C++, and Fortran.
-The idea is to first blaze through with a Python implimentation, which 
+This project is going to be done in three languages: Python, *C++*, and
+*Fortran.*
+The idea is to first blaze through with a Python implimentation, which can then
+serve as a template for which to write the *C* and *FORTRAN* version.
 
 
 ## Python

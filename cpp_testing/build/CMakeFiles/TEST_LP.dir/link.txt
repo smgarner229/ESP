@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/TEST_LP.dir/test_lapack.cpp.o  -o TEST_LP  /usr/lib/libblas.so /usr/lib/libf77blas.so /usr/lib/libatlas.so /usr/lib/liblapack.so /usr/lib/libblas.so /usr/lib/libf77blas.so /usr/lib/libatlas.so /usr/lib/liblapack.so 
